@@ -1,16 +1,11 @@
-# This is a sample Python script.
+#GUI using Tkinter, *Args, **kwargs
+import tkinter
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+window = tkinter.Tk()
+window.title("My first GUI program")
+window.minsize(width=500, height=300)
 
+my_label = tkinter.Label(text= "I am a label", font=("Arial",24,"bold"))
+my_label.pack(side="left")
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+window.mainloop()
