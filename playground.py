@@ -26,8 +26,6 @@ class Car:
 
 my_car = Car(make="Ford")
 print(my_car.model)
-
-
 print(calculate(2, add=3, multiply=5))
 print(add(2,3,4,5))
 print(multiply(2,3,4,5))
