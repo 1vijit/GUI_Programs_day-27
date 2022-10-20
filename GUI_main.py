@@ -32,7 +32,7 @@ label4.grid(column=2,row=1)
 def action():
     km = 1.609*float(entry.get())
     print(km)
-    label3.config(text=km)
+    label3.config(text=round(km,2))
 
 #calls action() when pressed
 button = Button(text="Calculate", command=action)
